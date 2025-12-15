@@ -106,7 +106,7 @@ async function grade(score: number) {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
 }
 
 .empty-icon,
@@ -117,13 +117,13 @@ async function grade(score: number) {
 
 .empty-state h2,
 .complete-state h2 {
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
 }
 
 .home-link {
   margin-top: 1.5rem;
-  color: #e94560;
+  color: var(--accent);
   text-decoration: none;
   font-weight: 600;
 }
@@ -137,21 +137,22 @@ async function grade(score: number) {
 
 .counter {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-secondary);
 }
 
 .card-type {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
   text-transform: capitalize;
 }
 
 .flashcard {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 20px;
   padding: 3rem 2rem;
   text-align: center;
@@ -167,25 +168,25 @@ async function grade(score: number) {
 }
 
 .flashcard:hover {
-  border-color: rgba(233, 69, 96, 0.3);
+  border-color: var(--accent);
 }
 
 .card-front .japanese {
   font-size: 2rem;
-  color: #fff;
+  color: var(--text-primary);
   line-height: 1.5;
 }
 
 .card-back .answer {
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--text-secondary);
   white-space: pre-line;
   line-height: 1.6;
 }
 
 .reveal-hint {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--text-muted);
 }
 
 .grade-buttons {

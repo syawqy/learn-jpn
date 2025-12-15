@@ -61,19 +61,19 @@ const lessonStore = useLessonStore();
 
 .page-header h1 {
   font-size: 2rem;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
 .subtitle {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-secondary);
 }
 
 .loading,
 .empty-state {
   text-align: center;
   padding: 3rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
 }
 
 .empty-icon {
@@ -83,7 +83,7 @@ const lessonStore = useLessonStore();
 
 .hint {
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
 }
 
 .levels-container {
@@ -93,7 +93,7 @@ const lessonStore = useLessonStore();
 }
 
 .level-section {
-  border-left: 3px solid #e94560;
+  border-left: 3px solid var(--accent);
   padding-left: 1rem;
 }
 
@@ -105,7 +105,7 @@ const lessonStore = useLessonStore();
 }
 
 .level-badge {
-  background: linear-gradient(135deg, #e94560, #ff6b6b);
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
   color: #fff;
   padding: 0.25rem 0.75rem;
   border-radius: 6px;
@@ -115,7 +115,7 @@ const lessonStore = useLessonStore();
 
 .lesson-count {
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
   font-weight: 400;
 }
 
@@ -126,8 +126,8 @@ const lessonStore = useLessonStore();
 }
 
 .lesson-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 10px;
   padding: 1rem;
   text-decoration: none;
@@ -135,13 +135,12 @@ const lessonStore = useLessonStore();
 }
 
 .lesson-card:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(233, 69, 96, 0.5);
+  border-color: var(--accent);
   transform: translateY(-2px);
 }
 
 .lesson-title {
-  color: #fff;
+  color: var(--text-primary);
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -149,6 +148,6 @@ const lessonStore = useLessonStore();
 
 .lesson-meta {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
 }
 </style>

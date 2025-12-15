@@ -131,7 +131,7 @@ async function addToReview() {
 .not-found {
   text-align: center;
   padding: 3rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
 }
 
 .lesson-header {
@@ -139,7 +139,7 @@ async function addToReview() {
 }
 
 .back-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
@@ -147,18 +147,18 @@ async function addToReview() {
 }
 
 .back-link:hover {
-  color: #e94560;
+  color: var(--accent);
 }
 
 .lesson-header h1 {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
 .progress-bar {
   height: 6px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--card-border);
   border-radius: 3px;
   overflow: hidden;
   margin-bottom: 0.5rem;
@@ -166,18 +166,18 @@ async function addToReview() {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #e94560, #ff6b6b);
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
   transition: width 0.3s ease;
 }
 
 .progress-text {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
 }
 
 .sentence-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 16px;
   padding: 2rem;
   margin-bottom: 1.5rem;
@@ -185,23 +185,23 @@ async function addToReview() {
 
 .japanese-text {
   font-size: 1.75rem;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
 
 .romaji-text {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-secondary);
   margin-bottom: 0.75rem;
   font-style: italic;
 }
 
 .english-text {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--text-primary);
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--card-border);
   margin-bottom: 1.5rem;
 }
 
@@ -213,12 +213,12 @@ async function addToReview() {
 .grammar-section h4,
 .vocab-section h4 {
   font-size: 1rem;
-  color: #e94560;
+  color: var(--accent);
   margin-bottom: 0.5rem;
 }
 
 .grammar-section p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -230,7 +230,8 @@ async function addToReview() {
 }
 
 .vocab-item {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 8px;
   padding: 0.5rem 0.75rem;
   display: flex;
@@ -240,18 +241,18 @@ async function addToReview() {
 
 .vocab-word {
   font-size: 1rem;
-  color: #fff;
+  color: var(--text-primary);
   font-weight: 600;
 }
 
 .vocab-reading {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
 }
 
 .vocab-meaning {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
 }
 
 .navigation {
@@ -268,12 +269,13 @@ async function addToReview() {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-primary);
 }
 
 .nav-btn:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent);
 }
 
 .nav-btn:disabled {
@@ -282,7 +284,9 @@ async function addToReview() {
 }
 
 .nav-btn.primary {
-  background: linear-gradient(135deg, #e94560, #ff6b6b);
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  border: none;
+  color: #fff;
 }
 
 .nav-btn.primary:hover:not(:disabled) {

@@ -121,13 +121,13 @@ async function importData() {
 
 .page-header h1 {
   font-size: 2rem;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 2rem;
 }
 
 .settings-section {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -135,7 +135,7 @@ async function importData() {
 
 .settings-section h2 {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-secondary);
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -148,21 +148,22 @@ async function importData() {
 }
 
 .setting-label {
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .toggle-btn {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: var(--card-border);
+  color: var(--text-primary);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .toggle-btn.active {
   background: #28a745;
+  color: #fff;
 }
 
 .stats-list {
@@ -174,11 +175,11 @@ async function importData() {
 .stat-row {
   display: flex;
   justify-content: space-between;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
 }
 
 .stat-value {
-  color: #fff;
+  color: var(--text-primary);
   font-weight: 600;
 }
 
@@ -192,8 +193,8 @@ async function importData() {
   padding: 0.75rem 1rem;
   border: none;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: var(--card-border);
+  color: var(--text-primary);
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -201,16 +202,16 @@ async function importData() {
 }
 
 .action-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent);
 }
 
 .about p {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
   margin-bottom: 0.5rem;
 }
 
 .version {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--text-muted);
 }
 </style>

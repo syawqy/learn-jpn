@@ -28,11 +28,12 @@ const srsStore = useSRSStore();
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--card-border);
   position: sticky;
   top: 0;
   z-index: 100;
+  backdrop-filter: blur(10px);
 }
 
 .nav-brand {
@@ -42,7 +43,7 @@ const srsStore = useSRSStore();
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .brand-icon {
@@ -50,7 +51,7 @@ const srsStore = useSRSStore();
 }
 
 .brand-text {
-  background: linear-gradient(90deg, #e94560, #ff6b6b);
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -63,7 +64,7 @@ const srsStore = useSRSStore();
 }
 
 .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -71,11 +72,11 @@ const srsStore = useSRSStore();
 }
 
 .nav-link:hover {
-  color: #e94560;
+  color: var(--accent);
 }
 
 .nav-link.router-link-active {
-  color: #e94560;
+  color: var(--accent);
 }
 
 .review-link {
@@ -85,7 +86,7 @@ const srsStore = useSRSStore();
 }
 
 .due-badge {
-  background: #e94560;
+  background: var(--accent);
   color: white;
   font-size: 0.75rem;
   padding: 0.15rem 0.5rem;
