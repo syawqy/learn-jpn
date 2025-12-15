@@ -1,4 +1,4 @@
-# 🇯🇵 LearnJPN
+# 🗻 LearnJPN
 
 A client-side, offline-first Japanese learning app built with Vue 3 + TypeScript. Learn Japanese through sentences with integrated vocabulary, grammar explanations, and a spaced repetition system (SRS) for effective memorization.
 
