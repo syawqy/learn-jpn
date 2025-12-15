@@ -8,7 +8,7 @@ const srsStore = useSRSStore();
 <template>
   <nav class="navbar">
     <RouterLink to="/" class="nav-brand">
-      <span class="brand-icon">🇯🇵</span>
+      <span class="brand-icon">🌸</span>
       <span class="brand-text">LearnJPN</span>
     </RouterLink>
     <div class="nav-links">

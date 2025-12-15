@@ -16,7 +16,18 @@ A client-side, offline-first Japanese learning app built with Vue 3 + TypeScript
 - **Import/Export** - Backup and restore your progress
 - **Static Deployment** - No backend required, deploy to Netlify/Vercel
 
-## 🚀 Quick Start
+## � Screenshots
+
+| Home | Lessons |
+|------|---------|
+| ![Home](screenshots/home.png) | ![Lessons](screenshots/lessons.png) |
+
+| Lesson Study | Settings |
+|--------------|----------|
+| ![Lesson Detail](screenshots/lesson_detail.png) | ![Settings](screenshots/settings.png) |
+
+
+## �🚀 Quick Start
 
 ```bash
 # Install dependencies
