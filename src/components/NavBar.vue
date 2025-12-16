@@ -8,7 +8,7 @@ const srsStore = useSRSStore();
 <template>
   <nav class="navbar">
     <RouterLink to="/" class="nav-brand">
-      <span class="brand-icon">🌸</span>
+      <img src="/logo.png" alt="LearnJPN Logo" class="brand-icon" />
       <span class="brand-text">LearnJPN</span>
     </RouterLink>
     <div class="nav-links">
@@ -47,7 +47,8 @@ const srsStore = useSRSStore();
 }
 
 .brand-icon {
-  font-size: 1.5rem;
+  height: 2rem;
+  width: auto;
 }
 
 .brand-text {
